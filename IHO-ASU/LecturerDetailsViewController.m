@@ -81,6 +81,10 @@
     
 }
 
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 -(LecturerDetail *)lectDetail:(int)letID{
     
     sqlite3_stmt *statement;
@@ -135,6 +139,8 @@
 - (IBAction)linkB:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:detail.link]];
 }
+
+
 
 
 @end

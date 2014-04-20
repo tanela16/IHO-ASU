@@ -19,5 +19,7 @@
 
 
 -(NSArray *) lectDetailInfo;
+-(NSArray *) scDetailsInfo;
+-(void)reloadTableView;
 
 @end

@@ -22,7 +22,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     bool ipad = ([[UIDevice currentDevice]userInterfaceIdiom ] == UIUserInterfaceIdiomPad);
-    
+    NSString *htmlpath = nil;
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(120, 34, 150,  36)];
     imageView.image = [UIImage imageNamed:@"iho_h_mg.png"];
     
@@ -41,7 +41,13 @@
     field.layer.cornerRadius=15;
    // [field setBackgroundColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0]];
     
-    NSString *htmlpath = [[NSBundle mainBundle] pathForResource:@"skull" ofType:@"html"];
+    
+    self.ihoLogo.scalesPageToFit = YES;
+    if(!ipad)
+    htmlpath = [[NSBundle mainBundle] pathForResource:@"skull" ofType:@"html"];
+    else
+     htmlpath = [[NSBundle mainBundle] pathForResource:@"skulliPad" ofType:@"html"];
+
     NSString *html = [NSString stringWithContentsOfFile:htmlpath encoding:NSUTF8StringEncoding error:nil];
     NSURL *baseURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@", [[NSBundle mainBundle] bundlePath]]];
     ihoLogo.scalesPageToFit = YES;
