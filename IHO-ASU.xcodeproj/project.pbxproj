@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5F38C3BB18FEE30C003A62CC /* skulliPad.html in Resources */ = {isa = PBXBuildFile; fileRef = 5F38C3BA18FEE30C003A62CC /* skulliPad.html */; };
 		5F38C3BE18FEF6E5003A62CC /* Science.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F38C3BD18FEF6E5003A62CC /* Science.m */; };
+		5F4BF99C1904B7E200EF3BFF /* location.html in Resources */ = {isa = PBXBuildFile; fileRef = 5F4BF99B1904B7E200EF3BFF /* location.html */; };
+		5F4BF99E1904B7F100EF3BFF /* Contact.html in Resources */ = {isa = PBXBuildFile; fileRef = 5F4BF99D1904B7F100EF3BFF /* Contact.html */; };
+		5F4BF9A11904C09400EF3BFF /* ConnectDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BF9A01904C09400EF3BFF /* ConnectDetailsViewController.m */; };
 		5F566AB718FC43A60042F4CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F566AB618FC43A60042F4CA /* Foundation.framework */; };
 		5F566AB918FC43A60042F4CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F566AB818FC43A60042F4CA /* CoreGraphics.framework */; };
 		5F566ABB18FC43A60042F4CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F566ABA18FC43A60042F4CA /* UIKit.framework */; };
@@ -61,6 +64,10 @@
 		5F566B7018FC467B0042F4CA /* vimeo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B5218FC467B0042F4CA /* vimeo.png */; };
 		5F566B7118FC467B0042F4CA /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B5318FC467B0042F4CA /* youtube.png */; };
 		5F566B7318FC47810042F4CA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F566B7218FC47810042F4CA /* libsqlite3.dylib */; };
+		5F92417C1907F6480097D1F4 /* BeingHumanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92417B1907F6480097D1F4 /* BeingHumanViewController.m */; };
+		5F92417F1907F66D0097D1F4 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92417E1907F66D0097D1F4 /* SignUpViewController.m */; };
+		5F9241821907FD460097D1F4 /* EventDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9241811907FD460097D1F4 /* EventDetailsViewController.m */; };
+		5F92418519080F6F0097D1F4 /* EventsDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92418419080F6F0097D1F4 /* EventsDetail.m */; };
 		5F9E8C1918FDBE350008C7F1 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E8C1518FDBE350008C7F1 /* About.html */; };
 		5F9E8C1A18FDBE350008C7F1 /* Donate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E8C1618FDBE350008C7F1 /* Donate.txt */; };
 		5F9E8C1C18FDBE350008C7F1 /* search-icon-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E8C1818FDBE350008C7F1 /* search-icon-64.png */; };
@@ -80,6 +87,10 @@
 		5F38C3BA18FEE30C003A62CC /* skulliPad.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = skulliPad.html; sourceTree = "<group>"; };
 		5F38C3BC18FEF6E5003A62CC /* Science.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Science.h; sourceTree = "<group>"; };
 		5F38C3BD18FEF6E5003A62CC /* Science.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Science.m; sourceTree = "<group>"; };
+		5F4BF99B1904B7E200EF3BFF /* location.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = location.html; sourceTree = "<group>"; };
+		5F4BF99D1904B7F100EF3BFF /* Contact.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Contact.html; sourceTree = "<group>"; };
+		5F4BF99F1904C09400EF3BFF /* ConnectDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectDetailsViewController.h; sourceTree = "<group>"; };
+		5F4BF9A01904C09400EF3BFF /* ConnectDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectDetailsViewController.m; sourceTree = "<group>"; };
 		5F566AB318FC43A60042F4CA /* IHO-ASU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IHO-ASU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F566AB618FC43A60042F4CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5F566AB818FC43A60042F4CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -152,6 +163,14 @@
 		5F566B5218FC467B0042F4CA /* vimeo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vimeo.png; sourceTree = "<group>"; };
 		5F566B5318FC467B0042F4CA /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
 		5F566B7218FC47810042F4CA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		5F92417A1907F6480097D1F4 /* BeingHumanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeingHumanViewController.h; sourceTree = "<group>"; };
+		5F92417B1907F6480097D1F4 /* BeingHumanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeingHumanViewController.m; sourceTree = "<group>"; };
+		5F92417D1907F66D0097D1F4 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		5F92417E1907F66D0097D1F4 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		5F9241801907FD460097D1F4 /* EventDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailsViewController.h; sourceTree = "<group>"; };
+		5F9241811907FD460097D1F4 /* EventDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailsViewController.m; sourceTree = "<group>"; };
+		5F92418319080F6F0097D1F4 /* EventsDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsDetail.h; sourceTree = "<group>"; };
+		5F92418419080F6F0097D1F4 /* EventsDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsDetail.m; sourceTree = "<group>"; };
 		5F9E8C1518FDBE350008C7F1 /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
 		5F9E8C1618FDBE350008C7F1 /* Donate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Donate.txt; sourceTree = "<group>"; };
 		5F9E8C1818FDBE350008C7F1 /* search-icon-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-icon-64.png"; sourceTree = "<group>"; };
@@ -260,6 +279,16 @@
 				5F566ABD18FC43A60042F4CA /* Supporting Files */,
 				5F38C3BC18FEF6E5003A62CC /* Science.h */,
 				5F38C3BD18FEF6E5003A62CC /* Science.m */,
+				5F4BF99F1904C09400EF3BFF /* ConnectDetailsViewController.h */,
+				5F4BF9A01904C09400EF3BFF /* ConnectDetailsViewController.m */,
+				5F92417A1907F6480097D1F4 /* BeingHumanViewController.h */,
+				5F92417B1907F6480097D1F4 /* BeingHumanViewController.m */,
+				5F92417D1907F66D0097D1F4 /* SignUpViewController.h */,
+				5F92417E1907F66D0097D1F4 /* SignUpViewController.m */,
+				5F9241801907FD460097D1F4 /* EventDetailsViewController.h */,
+				5F9241811907FD460097D1F4 /* EventDetailsViewController.m */,
+				5F92418319080F6F0097D1F4 /* EventsDetail.h */,
+				5F92418419080F6F0097D1F4 /* EventsDetail.m */,
 			);
 			path = "IHO-ASU";
 			sourceTree = "<group>";
@@ -334,6 +363,8 @@
 				5F566B0918FC45400042F4CA /* jquery-1.11.0.min.js */,
 				5F566B0818FC45400042F4CA /* index.js */,
 				5F38C3BA18FEE30C003A62CC /* skulliPad.html */,
+				5F4BF99B1904B7E200EF3BFF /* location.html */,
+				5F4BF99D1904B7F100EF3BFF /* Contact.html */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -440,7 +471,9 @@
 				5F566B6118FC467B0042F4CA /* IHO_logo_active_areas.ai in Resources */,
 				5F566B1D18FC45400042F4CA /* CreditDetails.html in Resources */,
 				5F566B5518FC467B0042F4CA /* asuIHO.db in Resources */,
+				5F4BF99C1904B7E200EF3BFF /* location.html in Resources */,
 				5F566AC118FC43A60042F4CA /* InfoPlist.strings in Resources */,
+				5F4BF99E1904B7F100EF3BFF /* Contact.html in Resources */,
 				5F566B5B18FC467B0042F4CA /* f_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +493,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4BF9A11904C09400EF3BFF /* ConnectDetailsViewController.m in Sources */,
+				5F92418519080F6F0097D1F4 /* EventsDetail.m in Sources */,
 				5F566B1F18FC45400042F4CA /* DonateSiteViewController.m in Sources */,
 				5F566B2418FC45400042F4CA /* GalleryViewController.m in Sources */,
 				5F566AC318FC43A60042F4CA /* main.m in Sources */,
@@ -473,11 +508,14 @@
 				5F566B2F18FC45400042F4CA /* UITableViewController+News_EventsController.m in Sources */,
 				5F566B2C18FC45400042F4CA /* NewsDetail.m in Sources */,
 				5F566AC718FC43A60042F4CA /* IHOAppDelegate.m in Sources */,
+				5F92417F1907F66D0097D1F4 /* SignUpViewController.m in Sources */,
 				5F566B2818FC45400042F4CA /* LecturerDetail.m in Sources */,
 				5F566B1918FC45400042F4CA /* AboutViewController.m in Sources */,
+				5F92417C1907F6480097D1F4 /* BeingHumanViewController.m in Sources */,
 				5F566B2318FC45400042F4CA /* GalleryOptionsViewController.m in Sources */,
 				5F566B1E18FC45400042F4CA /* CreditDetailsViewController.m in Sources */,
 				5F566AD018FC43A60042F4CA /* IHOViewController.m in Sources */,
+				5F9241821907FD460097D1F4 /* EventDetailsViewController.m in Sources */,
 				5F566B2218FC45400042F4CA /* FieldViewController.m in Sources */,
 				5F566B2B18FC45400042F4CA /* News+EventsViewController.m in Sources */,
 				5F566B2D18FC45400042F4CA /* NewsDetailViewController.m in Sources */,

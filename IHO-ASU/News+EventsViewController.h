@@ -11,6 +11,7 @@
 #import <UIKit/UIKit.h>
 
 @class NewsDetailViewController;
+@class EventDetailsViewController;
 
 @interface News_EventsViewController : UITableViewController
 
@@ -19,5 +20,6 @@
 
 
 -(NSArray *) newsDetailInfo;
+-(NSArray *) eventsDetailInfo;
 
 @end

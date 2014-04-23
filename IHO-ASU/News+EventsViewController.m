@@ -9,10 +9,13 @@
 #import "News+EventsViewController.h"
 #import "NewsDetailViewController.h"
 #import "NewsDetail.h"
+#import "EventsDetail.h"
+#import "EventDetailsViewController.h"
 
 @interface News_EventsViewController ()
 {
     NSArray *newsItems;
+    NSArray *eventItems;
 }
 @end
 
@@ -41,11 +44,13 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 
     newsItems = [[NSArray alloc] init];
+    eventItems = [[NSArray alloc] init];
     NSString *sqLiteDb = [[NSBundle mainBundle] pathForResource:@"asuIHO" ofType:@"db"];
     
     if (sqlite3_open([sqLiteDb UTF8String],&_asuIHO)==SQLITE_OK)
     {
         newsItems = [self newsDetailInfo];
+        eventItems = [self eventsDetailInfo];
     }
     
 }
@@ -63,7 +68,6 @@
         while(sqlite3_step(statement)==SQLITE_ROW){
             
             int iD = sqlite3_column_int(statement, 0);
-            
             //read data from the result
             NSString *title =  [NSString  stringWithUTF8String:(char *)sqlite3_column_text(statement, 1)];
             NSData *imgData = [[NSData alloc] initWithBytes:sqlite3_column_blob(statement, 2) length:sqlite3_column_bytes(statement, 2)];
@@ -88,7 +92,38 @@
     
 }
 
+-(NSArray *) eventsDetailInfo{
+    NSMutableArray *obj = [[NSMutableArray alloc ] init ];
+    sqlite3_stmt *statement;
+    
+    NSString *query = [NSString stringWithFormat:@"SELECT NewsId,NewsTitle,NewsImage,NewsText,NewsLink FROM News"];
+    const char *query_stmt = [query UTF8String];
+    if(sqlite3_prepare_v2(_asuIHO,query_stmt,-1,&statement,NULL)==SQLITE_OK)
+    {
+        while(sqlite3_step(statement)==SQLITE_ROW){
+            
+            int iD = sqlite3_column_int(statement, 0);
+            //read data from the result
+            NSString *title =  [NSString  stringWithUTF8String:(char *)sqlite3_column_text(statement, 1)];
+            EventsDetail *eventItem = [[EventsDetail alloc] initWithTitle:iD title:title];
+            if(title==nil)
+                NSLog(@"No data present");
+            else
+                //UIImage *img = [[UIImage alloc]initWithData:imgData ];
+                [obj addObject:eventItem];
+            
+            
+            NSLog(@"retrieved data");
+            
+        }
+    }
+    sqlite3_finalize(statement);
+    
+    sqlite3_close(_asuIHO);
+    return obj;
 
+    
+}
 
 
 
@@ -104,18 +139,22 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
+    if(section==0)
     return [newsItems count];
+    else
+    return [eventItems count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if(indexPath.section==0){
     static NSString *CellIdentifier = @"newsCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
@@ -125,22 +164,53 @@
     [cell setBackgroundColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
     [cell.textLabel setTextColor:[UIColor colorWithWhite:1.0 alpha:1.0]];
     [cell.textLabel setText:[NSString stringWithString:Item.newslink]];
-    
+        return cell;
+    }
     
     // Configure the cell...
+    if(indexPath.section==1){
+        static NSString *CellIdentifier = @"eventCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        
+        //imageView.image = [images objectAtIndex:indexPath.row];
+        
+        EventsDetail *Item = [newsItems objectAtIndex:indexPath.row];
+        [cell setBackgroundColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
+        [cell.textLabel setTextColor:[UIColor colorWithWhite:1.0 alpha:1.0]];
+        [cell.textLabel setText:[NSString stringWithString:Item.title]];
+    }
     
-    return cell;
+    return nil;
 }
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+      if( [[segue identifier] isEqualToString:@"newsCell"]){
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
    
     NewsDetail *info = [newsItems objectAtIndex:indexPath.row];
     NewsDetailViewController *getDetails = segue.destinationViewController;
     getDetails.newsId = info.newsId;
-
+      }
+    if( [[segue identifier] isEqualToString:@"eventCell"]) {
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    EventsDetail *info = [eventItems objectAtIndex:indexPath.row];
+    EventDetailsViewController *getDetails = segue.destinationViewController;
+    getDetails.eventId= info.eventId;
+    }
 }
+
+
+
+-(void)reloadTableView
+{
+    
+    [self reloadTableView];
+    
+}
+
 
 
 - (void)viewWillAppear:(BOOL)animated

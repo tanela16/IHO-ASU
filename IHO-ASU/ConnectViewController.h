@@ -10,6 +10,11 @@
 
 @interface ConnectViewController : UITableViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *connectFB;
 
+@property (weak, nonatomic) IBOutlet UIButton *connectTW;
+
+- (IBAction)connectFB:(id)sender;
+- (IBAction)connectTW:(id)sender;
 
 @end

@@ -32,6 +32,7 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,29 +42,50 @@
 }
 
 #pragma mark - Table view data source
-
+/*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    if(indexPath.section==0){
+        
+        static NSString *CellIdentifier = @"ihoConnect";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+            return cell;
+    }
+    if(indexPath.section==1){
+        static NSString *CellIdentifier = @"beingHuman";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        return cell;
+    }
+    if(indexPath.section==2)
+    {
+        static NSString *CellIdentifier = @"signUp";
+        UITableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        return cell;
+    }
+    if(indexPath.section==3)
+    {
+        static NSString *CellIdentifier = @"socialCell";
+        UITableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        return cell;
+    }
     
-    return cell;
+    return nil;
+
 }
 
 /*
@@ -117,4 +139,15 @@
 
  */
 
+- (IBAction)connectFB:(id)sender {
+    NSString *link=@"https://www.facebook.com/pages/Lucy-and-ASU-Institute-of-Human-Origins/146317035387367";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:link]];
+    
+}
+
+- (IBAction)connectTW:(id)sender {
+    NSString *link=@"https://twitter.com/LucyASUIHO";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:link]];
+    
+}
 @end

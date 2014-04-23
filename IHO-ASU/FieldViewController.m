@@ -127,7 +127,7 @@ NSArray *scItems;
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -136,20 +136,23 @@ NSArray *scItems;
     // Return the number of rows in the section.
     if(section==0)
     return [lectItems count];
-    else
+    else if(section==1)
     return [scItems count];
+    else
+    return 1;
    
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     
    
-    if(section==0)
-        return @"Choose a lecture";
+    if(section==0){
+        [UIFont fontWithName:@"Arial-BoldMT" size:10];
+        return @"Choose a lecture";}
     else if(section==1)
         return @"New Science";
     else if(section==2)
-        return @"Who is Lucy?";
+        return @"";
     
    return @"Student Blog-Notes from the Field";
        
@@ -169,7 +172,7 @@ NSArray *scItems;
           [cell setBackgroundColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
 
      [cell.textLabel setTextColor:[UIColor colorWithWhite:1.0 alpha:1.0]];
-    [cell.textLabel setFont:[UIFont fontWithName:@"Arial" size:15]];
+    [cell.textLabel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:15]];
     [cell.textLabel setText:[NSString stringWithString:Item.name]];
           return cell;
     }
@@ -178,11 +181,25 @@ NSArray *scItems;
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
         Science *Item = [scItems objectAtIndex:indexPath.row];
         [cell setBackgroundColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
-
         [cell.textLabel setTextColor:[UIColor colorWithWhite:1.0 alpha:1.0]];
-        [cell.textLabel setFont:[UIFont fontWithName:@"Arial" size:15]];
+        [cell.textLabel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:15]];
         [cell.textLabel setText:[NSString stringWithString:Item.Sciencetitle]];
         return cell;
+    }
+    if(indexPath.section==2)
+    {
+        static NSString *CellIdentifier = @"lucyDetails";
+        UITableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        [cell setBackgroundColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
+        
+        [cell.textLabel setTextColor:[UIColor colorWithWhite:1.0 alpha:1.0]];
+        [cell.textLabel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:15]];
+        [cell.textLabel setText:@"Who is Lucy"];
+        return cell;
+    }
+    if(indexPath.section==3)
+    {
+        
     }
     
     return nil;
@@ -212,6 +229,7 @@ NSArray *scItems;
     getDetails.lectID= info.lectID;
         
     }
+    
     
 }
 
