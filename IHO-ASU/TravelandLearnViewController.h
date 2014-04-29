@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface TravelandLearnViewController : UIViewController
+- (IBAction)travelPlace1:(id)sender;
+- (IBAction)travelPlace2:(id)sender;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollContent;
 
+@property (weak, nonatomic) IBOutlet UIView *contentView;
 @end

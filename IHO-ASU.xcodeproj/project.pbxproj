@@ -48,7 +48,6 @@
 		5F566B2D18FC45400042F4CA /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F566B1518FC45400042F4CA /* NewsDetailViewController.m */; };
 		5F566B2E18FC45400042F4CA /* skull.html in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B1618FC45400042F4CA /* skull.html */; };
 		5F566B5418FC467B0042F4CA /* ASU IHO vertical.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B3118FC467B0042F4CA /* ASU IHO vertical.jpg */; };
-		5F566B5518FC467B0042F4CA /* asuIHO.db in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B3218FC467B0042F4CA /* asuIHO.db */; };
 		5F566B5918FC467B0042F4CA /* claszen_logo_maroon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B3918FC467B0042F4CA /* claszen_logo_maroon.png */; };
 		5F566B5B18FC467B0042F4CA /* f_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B3D18FC467B0042F4CA /* f_logo.png */; };
 		5F566B6018FC467B0042F4CA /* IHO_h_mg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B4218FC467B0042F4CA /* IHO_h_mg.png */; };
@@ -64,6 +63,7 @@
 		5F566B7118FC467B0042F4CA /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B5318FC467B0042F4CA /* youtube.png */; };
 		5F566B7318FC47810042F4CA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F566B7218FC47810042F4CA /* libsqlite3.dylib */; };
 		5F69C23C19102EDC009DC156 /* TravelandLearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F69C23B19102EDC009DC156 /* TravelandLearnViewController.m */; };
+		5F69C23E19103649009DC156 /* travel learn imge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F69C23D19103649009DC156 /* travel learn imge.jpg */; };
 		5F92417C1907F6480097D1F4 /* BeingHumanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92417B1907F6480097D1F4 /* BeingHumanViewController.m */; };
 		5F92417F1907F66D0097D1F4 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92417E1907F66D0097D1F4 /* SignUpViewController.m */; };
 		5F9241821907FD460097D1F4 /* EventDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9241811907FD460097D1F4 /* EventDetailsViewController.m */; };
@@ -71,6 +71,10 @@
 		5F9E8C1918FDBE350008C7F1 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E8C1518FDBE350008C7F1 /* About.html */; };
 		5F9E8C1A18FDBE350008C7F1 /* Donate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E8C1618FDBE350008C7F1 /* Donate.txt */; };
 		5F9E8C1C18FDBE350008C7F1 /* search-icon-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E8C1818FDBE350008C7F1 /* search-icon-64.png */; };
+		5FB10DF2191051F500081FB2 /* asuIHO.db in Resources */ = {isa = PBXBuildFile; fileRef = 5FB10DF1191051F500081FB2 /* asuIHO.db */; };
+		5FB10DF41910594F00081FB2 /* Lucy_FullSkeleton_uncolored.ai in Resources */ = {isa = PBXBuildFile; fileRef = 5FB10DF31910594F00081FB2 /* Lucy_FullSkeleton_uncolored.ai */; };
+		5FB10DF719105A3600081FB2 /* LucyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10DF619105A3600081FB2 /* LucyViewController.m */; };
+		5FB10DF919105D0000081FB2 /* Lucy.html in Resources */ = {isa = PBXBuildFile; fileRef = 5FB10DF819105D0000081FB2 /* Lucy.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,7 +150,6 @@
 		5F566B1518FC45400042F4CA /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
 		5F566B1618FC45400042F4CA /* skull.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = skull.html; sourceTree = "<group>"; };
 		5F566B3118FC467B0042F4CA /* ASU IHO vertical.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ASU IHO vertical.jpg"; sourceTree = "<group>"; };
-		5F566B3218FC467B0042F4CA /* asuIHO.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = asuIHO.db; sourceTree = "<group>"; };
 		5F566B3918FC467B0042F4CA /* claszen_logo_maroon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = claszen_logo_maroon.png; sourceTree = "<group>"; };
 		5F566B3D18FC467B0042F4CA /* f_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f_logo.png; sourceTree = "<group>"; };
 		5F566B4218FC467B0042F4CA /* IHO_h_mg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IHO_h_mg.png; sourceTree = "<group>"; };
@@ -163,6 +166,7 @@
 		5F566B7218FC47810042F4CA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		5F69C23A19102EDC009DC156 /* TravelandLearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelandLearnViewController.h; sourceTree = "<group>"; };
 		5F69C23B19102EDC009DC156 /* TravelandLearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelandLearnViewController.m; sourceTree = "<group>"; };
+		5F69C23D19103649009DC156 /* travel learn imge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "travel learn imge.jpg"; sourceTree = "<group>"; };
 		5F92417A1907F6480097D1F4 /* BeingHumanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeingHumanViewController.h; sourceTree = "<group>"; };
 		5F92417B1907F6480097D1F4 /* BeingHumanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeingHumanViewController.m; sourceTree = "<group>"; };
 		5F92417D1907F66D0097D1F4 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
@@ -174,6 +178,11 @@
 		5F9E8C1518FDBE350008C7F1 /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
 		5F9E8C1618FDBE350008C7F1 /* Donate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Donate.txt; sourceTree = "<group>"; };
 		5F9E8C1818FDBE350008C7F1 /* search-icon-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-icon-64.png"; sourceTree = "<group>"; };
+		5FB10DF1191051F500081FB2 /* asuIHO.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = asuIHO.db; sourceTree = "<group>"; };
+		5FB10DF31910594F00081FB2 /* Lucy_FullSkeleton_uncolored.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lucy_FullSkeleton_uncolored.ai; sourceTree = "<group>"; };
+		5FB10DF519105A3600081FB2 /* LucyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LucyViewController.h; sourceTree = "<group>"; };
+		5FB10DF619105A3600081FB2 /* LucyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LucyViewController.m; sourceTree = "<group>"; };
+		5FB10DF819105D0000081FB2 /* Lucy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Lucy.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +298,8 @@
 				5F566AF918FC45400042F4CA /* CreditDetailsViewController.m */,
 				5F566B1618FC45400042F4CA /* skull.html */,
 				5F566ABD18FC43A60042F4CA /* Supporting Files */,
+				5FB10DF519105A3600081FB2 /* LucyViewController.h */,
+				5FB10DF619105A3600081FB2 /* LucyViewController.m */,
 			);
 			path = "IHO-ASU";
 			sourceTree = "<group>";
@@ -342,11 +353,13 @@
 		5F566B3018FC46120042F4CA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5FB10DF31910594F00081FB2 /* Lucy_FullSkeleton_uncolored.ai */,
+				5FB10DF1191051F500081FB2 /* asuIHO.db */,
+				5F69C23D19103649009DC156 /* travel learn imge.jpg */,
 				5F9E8C1518FDBE350008C7F1 /* About.html */,
 				5F9E8C1618FDBE350008C7F1 /* Donate.txt */,
 				5F9E8C1818FDBE350008C7F1 /* search-icon-64.png */,
 				5F566B3118FC467B0042F4CA /* ASU IHO vertical.jpg */,
-				5F566B3218FC467B0042F4CA /* asuIHO.db */,
 				5F566B3918FC467B0042F4CA /* claszen_logo_maroon.png */,
 				5F566B3D18FC467B0042F4CA /* f_logo.png */,
 				5F566B4218FC467B0042F4CA /* IHO_h_mg.png */,
@@ -365,6 +378,7 @@
 				5F38C3BA18FEE30C003A62CC /* skulliPad.html */,
 				5F4BF99B1904B7E200EF3BFF /* location.html */,
 				5F4BF99D1904B7F100EF3BFF /* Contact.html */,
+				5FB10DF819105D0000081FB2 /* Lucy.html */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -455,9 +469,11 @@
 				5F566B2E18FC45400042F4CA /* skull.html in Resources */,
 				5F566B1A18FC45400042F4CA /* Main_iPad.storyboard in Resources */,
 				5F566B6918FC467B0042F4CA /* lucy_skull.png in Resources */,
+				5FB10DF919105D0000081FB2 /* Lucy.html in Resources */,
 				5F566B2118FC45400042F4CA /* InfoPlist.strings in Resources */,
 				5F9E8C1C18FDBE350008C7F1 /* search-icon-64.png in Resources */,
 				5F566B7018FC467B0042F4CA /* vimeo.png in Resources */,
+				5FB10DF41910594F00081FB2 /* Lucy_FullSkeleton_uncolored.ai in Resources */,
 				5F566B6F18FC467B0042F4CA /* twitter.png in Resources */,
 				5F566B5918FC467B0042F4CA /* claszen_logo_maroon.png in Resources */,
 				5F566ACD18FC43A60042F4CA /* Main_iPad.storyboard in Resources */,
@@ -466,11 +482,12 @@
 				5F566B5418FC467B0042F4CA /* ASU IHO vertical.jpg in Resources */,
 				5F566B6018FC467B0042F4CA /* IHO_h_mg.png in Resources */,
 				5F38C3BB18FEE30C003A62CC /* skulliPad.html in Resources */,
+				5F69C23E19103649009DC156 /* travel learn imge.jpg in Resources */,
 				5F566ACA18FC43A60042F4CA /* Main_iPhone.storyboard in Resources */,
+				5FB10DF2191051F500081FB2 /* asuIHO.db in Resources */,
 				5F9E8C1918FDBE350008C7F1 /* About.html in Resources */,
 				5F566B6118FC467B0042F4CA /* IHO_logo_active_areas.ai in Resources */,
 				5F566B1D18FC45400042F4CA /* CreditDetails.html in Resources */,
-				5F566B5518FC467B0042F4CA /* asuIHO.db in Resources */,
 				5F4BF99C1904B7E200EF3BFF /* location.html in Resources */,
 				5F566AC118FC43A60042F4CA /* InfoPlist.strings in Resources */,
 				5F4BF99E1904B7F100EF3BFF /* Contact.html in Resources */,
@@ -499,6 +516,7 @@
 				5F566B2418FC45400042F4CA /* GalleryViewController.m in Sources */,
 				5F566AC318FC43A60042F4CA /* main.m in Sources */,
 				5F566B2A18FC45400042F4CA /* MainViewController.m in Sources */,
+				5FB10DF719105A3600081FB2 /* LucyViewController.m in Sources */,
 				5F566B2918FC45400042F4CA /* LecturerDetailsViewController.m in Sources */,
 				5F566B2618FC45400042F4CA /* index.js in Sources */,
 				5F38C3BE18FEF6E5003A62CC /* Science.m in Sources */,

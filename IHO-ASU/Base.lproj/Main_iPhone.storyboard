@@ -667,35 +667,142 @@
             <point key="canvasLocation" x="829" y="686"/>
         </scene>
         <!--Traveland Learn View Controller-->
-        <scene sceneID="k7d-CA-Owi">
+        <scene sceneID="tgu-j9-xMN">
             <objects>
-                <viewController id="1cb-KF-ePi" customClass="TravelandLearnViewController" sceneMemberID="viewController">
+                <viewController id="31b-hv-rbO" customClass="TravelandLearnViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WEs-1R-Md1"/>
-                        <viewControllerLayoutGuide type="bottom" id="W23-KJ-b0a"/>
+                        <viewControllerLayoutGuide type="top" id="3Pr-vQ-HB5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yl5-BT-O2k"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Thc-UN-bYN">
+                    <view key="view" contentMode="scaleToFill" id="IYY-dT-aMo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1U-mj-O8k">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yLH-W5-dOI">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3z-GH-Q8c">
+                                                <rect key="frame" x="7" y="201" width="306" height="232"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">IHO’s travel program is different from any other travel experience. This is not just travel—it is immersion in the span of human history, hosted by IHO and ASU scientists who add a richer understanding of your travel destination. At the same time, our travel adventures are designed for fun, excitement, and comfort and take advantage of the best accommodations and sailing vessels available in the industry. We partner with top travel providers who are specialists in exotic areas of the world. Plus, tour leaders, such as Bill Kimbel and Don Johanson, have been accompanying our travelers since the 1980s to Ethiopia, France, Galápagos, Madagascar, South Africa, and Tanzania, as well as being seasoned world travelers themselves. From years of experience, we understand the balance between a great travel experience and a rich learning program. In fact, our trips are so unique and engaging that we have many satisfied repeat travelers.</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="11" name="ArialMT"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                            </textView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TRAVEL AND LEARN!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erW-Vt-qF9">
+                                                <rect key="frame" x="6" y="13" width="184" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sediments.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fjX-Ju-sea">
+                                                <rect key="frame" x="79" y="42" width="177" height="151"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8o-BP-sUI">
+                                                <rect key="frame" x="46" y="430" width="105" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.22352941179999999" green="0.41960784309999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                                                <state key="normal" title="Galapagos">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" red="0.22352941179999999" green="0.41960784309999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="emailQ:" destination="78Y-Ze-ug1" eventType="touchUpInside" id="sqp-Gh-RIe"/>
+                                                    <action selector="travelPlace1:" destination="31b-hv-rbO" eventType="touchUpInside" id="Aoj-AQ-F01"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hp8-me-CkM">
+                                                <rect key="frame" x="190" y="430" width="105" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.22352941179999999" green="0.41960784309999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                                                <state key="normal" title="France">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" red="0.22352941179999999" green="0.41960784309999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="emailQ:" destination="78Y-Ze-ug1" eventType="touchUpInside" id="XNm-kt-lxN"/>
+                                                    <action selector="travelPlace2:" destination="31b-hv-rbO" eventType="touchUpInside" id="Ntd-bb-iiC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="320" height="460"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="30K-l5-ZRD"/>
+                    <navigationItem key="navigationItem" id="xVy-O3-jTr"/>
+                    <connections>
+                        <outlet property="contentView" destination="yLH-W5-dOI" id="YhN-ZZ-9ff"/>
+                        <outlet property="scrollContent" destination="D1U-mj-O8k" id="ema-E1-4Jx"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tj7-9u-qZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qZ-4X-dyi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-306" y="-1144"/>
+            <point key="canvasLocation" x="-273" y="-1201"/>
         </scene>
         <!--News Events View Controller - News+Events-->
         <scene sceneID="COf-je-iti">
             <objects>
                 <tableViewController id="ZjC-6M-Jl1" customClass="News_EventsViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jdH-QG-Olw">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jdH-QG-Olw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <color key="sectionIndexColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cb2-aw-Kjf">
+                            <rect key="frame" x="0.0" y="217" width="320" height="53"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.22352941179999999" green="0.41960784309999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                            <state key="normal" title="IHO Travel Program">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <segue destination="31b-hv-rbO" kind="push" id="4FJ-we-P9W"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="newsCell" id="NPM-5k-T6O">
                                 <rect key="frame" x="0.0" y="119" width="320" height="44"/>
@@ -721,35 +828,6 @@
                                 <connections>
                                     <segue destination="uJb-gY-8ki" kind="push" identifier="events" id="6UY-pA-yoH"/>
                                 </connections>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="travel" rowHeight="57" id="ptZ-Cd-fNn">
-                                <rect key="frame" x="0.0" y="207" width="320" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ptZ-Cd-fNn" id="sAU-i7-NSG">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb2-aw-Kjf">
-                                            <rect key="frame" x="69" y="13" width="183" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.22352941179999999" green="0.41960784309999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
-                                            <state key="normal" title="IHO Travel Program">
-                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="15"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                            <connections>
-                                                <segue destination="1cb-KF-ePi" kind="push" identifier="travelSegue" id="vBh-JI-ngF"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1071,10 +1149,10 @@
             </objects>
             <point key="canvasLocation" x="135" y="-1319"/>
         </scene>
-        <!--View Controller-->
+        <!--Lucy View Controller-->
         <scene sceneID="N5F-UM-a2z">
             <objects>
-                <viewController id="D7h-zV-l2G" sceneMemberID="viewController">
+                <viewController id="D7h-zV-l2G" customClass="LucyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uRF-pQ-ZOt"/>
                         <viewControllerLayoutGuide type="bottom" id="PdY-oU-FGy"/>
@@ -1092,28 +1170,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="SFH-AJ-tn5"/>
+                    <connections>
+                        <outlet property="displayLucy" destination="eDL-sP-YDt" id="k5h-oz-XYB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1g-g9-FXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="483" y="-1713"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="94O-AF-s4n">
-            <objects>
-                <viewController id="Pn2-df-cZr" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="brK-hd-Q4e"/>
-                        <viewControllerLayoutGuide type="bottom" id="OSp-hD-oFb"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pEs-dE-4wl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HSN-Dg-9uM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="853" y="-1713"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lpx-La-YKu">
@@ -1270,12 +1333,31 @@
             </objects>
             <point key="canvasLocation" x="1305" y="622"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="bke-Tw-fbL">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="xhU-Wb-T4L" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eDA-cu-nWh"/>
+                        <viewControllerLayoutGuide type="bottom" id="I1b-7k-xoI"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5Sg-6j-Zn9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y8G-7d-tns" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="ASU IHO vertical.jpg" width="712" height="132"/>
         <image name="f_logo.png" width="140" height="140"/>
         <image name="invest.png" width="145" height="36"/>
         <image name="search-icon-64.png" width="64" height="64"/>
+        <image name="sediments.jpg" width="636" height="372"/>
         <image name="twitter.png" width="140" height="140"/>
         <image name="vimeo.png" width="500" height="300"/>
         <image name="youtube.png" width="500" height="300"/>

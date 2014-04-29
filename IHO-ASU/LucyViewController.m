@@ -1,18 +1,19 @@
 //
-//  TravelandLearnViewController.m
+//  LucyViewController.m
 //  IHO-ASU
 //
 //  Created by Cynosure on 4/29/14.
 //  Copyright (c) 2014 ASU. All rights reserved.
 //
 
-#import "TravelandLearnViewController.h"
+#import "LucyViewController.h"
 
-@interface TravelandLearnViewController ()
+@interface LucyViewController ()
 
 @end
 
-@implementation TravelandLearnViewController
+@implementation LucyViewController
+@synthesize displayLucy;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,8 +28,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.22f green:0.419f blue:0.619f alpha:1.0 ]];
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Lucy" ofType:@"html"];
+    if (path){
+        
+        NSData *data=[NSData dataWithContentsOfFile:path];
+        [displayLucy loadData:data MIMEType:@"text/html" textEncodingName:@"convert"  baseURL:nil];
+        displayLucy.scrollView.scrollEnabled= FALSE;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,13 +54,4 @@
 }
 */
 
-- (IBAction)travelPlace1:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://iho.asu.edu/outreach/travel/galapagos2014"]];
-
-}
-
-- (IBAction)travelPlace2:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://iho.asu.edu/outreach/travel/france2013"]];
-
-}
 @end

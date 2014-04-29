@@ -139,7 +139,7 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 3;
+    return 2;
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -148,10 +148,8 @@
     if(section==0){
         [UIFont fontWithName:@"Arial-BoldMT" size:10];
         return @"News";}
-    else if(section==0){
-        return @"Event";}
     else
-        return @"TRAVEL AND LEARN!";
+        return @"Event";
     
 }
 
@@ -214,6 +212,9 @@
     EventDetailsViewController *getDetails = segue.destinationViewController;
     getDetails.eventID= info.eventId;
     }
+    
+    
+    
 }
 
 
