@@ -41,6 +41,8 @@
  
     //menubar specifications
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 
     newsItems = [[NSArray alloc] init];
@@ -86,8 +88,6 @@
         }
     }
     sqlite3_finalize(statement);
-    
-    sqlite3_close(_asuIHO);
     return obj;
     
 }
@@ -96,7 +96,7 @@
     NSMutableArray *obj = [[NSMutableArray alloc ] init ];
     sqlite3_stmt *statement;
     
-    NSString *query = [NSString stringWithFormat:@"SELECT NewsId,NewsTitle,NewsImage,NewsText,NewsLink FROM News"];
+    NSString *query = [NSString stringWithFormat:@"SELECT EventId,EventTitle FROM Events"];
     const char *query_stmt = [query UTF8String];
     if(sqlite3_prepare_v2(_asuIHO,query_stmt,-1,&statement,NULL)==SQLITE_OK)
     {
@@ -139,7 +139,20 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 2;
+    return 3;
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    
+    
+    if(section==0){
+        [UIFont fontWithName:@"Arial-BoldMT" size:10];
+        return @"News";}
+    else if(section==0){
+        return @"Event";}
+    else
+        return @"TRAVEL AND LEARN!";
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -174,10 +187,11 @@
         
         //imageView.image = [images objectAtIndex:indexPath.row];
         
-        EventsDetail *Item = [newsItems objectAtIndex:indexPath.row];
+        EventsDetail *Item = [eventItems objectAtIndex:indexPath.row];
         [cell setBackgroundColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
         [cell.textLabel setTextColor:[UIColor colorWithWhite:1.0 alpha:1.0]];
         [cell.textLabel setText:[NSString stringWithString:Item.title]];
+        return cell;
     }
     
     return nil;
@@ -185,20 +199,20 @@
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-      if( [[segue identifier] isEqualToString:@"newsCell"]){
+      if( [[segue identifier] isEqualToString:@"news"]){
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
    
     NewsDetail *info = [newsItems objectAtIndex:indexPath.row];
     NewsDetailViewController *getDetails = segue.destinationViewController;
     getDetails.newsId = info.newsId;
       }
-    if( [[segue identifier] isEqualToString:@"eventCell"]) {
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    if( [[segue identifier] isEqualToString:@"events"]) {
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
     EventsDetail *info = [eventItems objectAtIndex:indexPath.row];
     EventDetailsViewController *getDetails = segue.destinationViewController;
-    getDetails.eventId= info.eventId;
+    getDetails.eventID= info.eventId;
     }
 }
 

@@ -29,14 +29,16 @@
     [super viewDidLoad];
     
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
+    
 
+    
+    self.TextLocation.selectable = YES;
     TextLocation.font = [UIFont fontWithName:@"Arial" size:9];
-    TextLocation.text = @"Social Sciences Building,Room 103\n951 South Cady Mall\nTempe, AZ 85287-4101";
+    [TextLocation setText:@"Social Sciences Building,Room 103\n951 South Cady Mall\nTempe, AZ 85287-4101"];
+    self.TextContact.selectable = YES;
     TextContact.font = [UIFont fontWithName:@"Arial" size:9];
-    TextContact.text = @"Phone 480.727.6580\nFax 480.727.6570\nEmail iho@asu.edu";
-    
-    
-    
+    NSString *contact = @"Phone:480.727.6580\nFax:480.727.6570\nEmail:iho@asu.edu";
+    TextContact.text = contact;
     
       // Do any additional setup after loading the view.
 }
@@ -69,7 +71,6 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:link]];
 
 }
-
 
 - (IBAction)buttonLoc:(id)sender {
     NSString *link=@"https://iho.asu.edu/";

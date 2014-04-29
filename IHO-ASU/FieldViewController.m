@@ -35,6 +35,8 @@ NSArray *scItems;
 	// Do any additional setup after loading the view.
     
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+
     lectItems = [[NSArray alloc] init];
     scItems = [[NSArray alloc] init];
     NSString *sqLiteDb = [[NSBundle mainBundle] pathForResource:@"asuIHO" ofType:@"db"];
@@ -147,7 +149,7 @@ NSArray *scItems;
     
    
     if(section==0){
-        [UIFont fontWithName:@"Arial-BoldMT" size:10];
+        [UIFont fontWithName:@"Arial-BoldMT" size:19];
         return @"Choose a lecture";}
     else if(section==1)
         return @"New Science";
@@ -163,11 +165,8 @@ NSArray *scItems;
   
     
       if(indexPath.section==0){
-          
           static NSString *CellIdentifier = @"newsCell";
           UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    //imageView.image = [images objectAtIndex:indexPath.row];
-  
     LecturerDetail *Item = [lectItems objectAtIndex:indexPath.row];
           [cell setBackgroundColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
 

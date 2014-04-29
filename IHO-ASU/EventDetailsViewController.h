@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <sqlite3.h>
+
+@class EventsDetail;
 
 @interface EventDetailsViewController : UIViewController{
     int _eventID;
@@ -19,12 +22,14 @@
 
 - (IBAction)mapIt:(id)sender;
 
-- (IBAction)registerLink:(id)sender;
-@property (nonatomic,assign) int eventId;
 
+- (IBAction)registerEvent:(id)sender;
 @property (nonatomic) sqlite3 *asuIHO;
 
 -(EventsDetail *)eventDetail:(int)eventId;
+
+@property (nonatomic,assign) int eventID;
+
 
 
 @end

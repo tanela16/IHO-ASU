@@ -10,4 +10,5 @@
 
 @interface SignUpViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *signUP;
 @end

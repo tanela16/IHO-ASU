@@ -13,6 +13,7 @@
 @end
 
 @implementation SignUpViewController
+@synthesize signUP;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +28,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+
+    [signUP setDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,5 +49,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    
+    [signUP resignFirstResponder];
+    return YES;
+}
 
 @end
