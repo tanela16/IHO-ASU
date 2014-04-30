@@ -69,7 +69,7 @@
     CGRect textview2= CGRectMake(8,418,100,30) ;
     UITextView *number=[[UITextView alloc] initWithFrame:textview2];
     number.font=[UIFont fontWithName:@"Arial" size:8];
-    number.text = @"480.727.6580\niho.asu.edu";
+    number.text = @"480.727.6580\niho@asu.edu";
     number.editable=NO;
     [self.view addSubview:number];
     
@@ -86,7 +86,7 @@
         location.font=[UIFont fontWithName:@"Arial" size:10];
         location.text = @"951 South Cady Mall\nSocial Sciences building #103\nASU Tempe Campus";
         contact.font=[UIFont fontWithName:@"Arial" size:10];
-        contact.text = @"480.727.6580\niho.asu.edu";
+        contact.text = @"480.727.6580\niho@asu.edu";
         mailing.font=[UIFont fontWithName:@"Arial" size:10];
         mailing.text = @"ASU Institute of Human Origins\nPO Box 874101\nTempe, AZ 85287-4101";
         

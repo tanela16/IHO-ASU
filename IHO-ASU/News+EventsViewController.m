@@ -139,7 +139,7 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 2;
+    return 3;
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -148,8 +148,10 @@
     if(section==0){
         [UIFont fontWithName:@"Arial-BoldMT" size:10];
         return @"News";}
+    else if(section==1){
+        return @"Event";}
     else
-        return @"Event";
+        return @"Travel and Learn";
     
 }
 
@@ -159,8 +161,9 @@
     // Return the number of rows in the section.
     if(section==0)
     return [newsItems count];
-    else
+    else  if(section==1)
     return [eventItems count];
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -173,8 +176,9 @@
    
     NewsDetail *Item = [newsItems objectAtIndex:indexPath.row];
     [cell setBackgroundColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
+    [cell.textLabel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:15]];
     [cell.textLabel setTextColor:[UIColor colorWithWhite:1.0 alpha:1.0]];
-    [cell.textLabel setText:[NSString stringWithString:Item.newslink]];
+    [cell.textLabel setText:[NSString stringWithString:Item.newstitle]];
         return cell;
     }
     
@@ -187,10 +191,23 @@
         
         EventsDetail *Item = [eventItems objectAtIndex:indexPath.row];
         [cell setBackgroundColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
+        [cell.textLabel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:15]];
         [cell.textLabel setTextColor:[UIColor colorWithWhite:1.0 alpha:1.0]];
         [cell.textLabel setText:[NSString stringWithString:Item.title]];
         return cell;
     }
+    
+    if(indexPath.section==2){
+        static NSString *CellIdentifier = @"travelCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        [cell.textLabel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:15]];
+        [cell setBackgroundColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
+        [cell.textLabel setTextColor:[UIColor colorWithWhite:1.0 alpha:1.0]];
+        [cell.textLabel setText:@"IHO TRAVEL AND LEARN"];
+        return cell;
+        return cell;
+    }
+    
     
     return nil;
 }
@@ -213,6 +230,10 @@
     getDetails.eventID= info.eventId;
     }
     
+    if( [[segue identifier] isEqualToString:@"travelSegue"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+    }
     
     
 }

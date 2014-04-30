@@ -24,7 +24,7 @@
     bool ipad = ([[UIDevice currentDevice]userInterfaceIdiom ] == UIUserInterfaceIdiomPad);
     NSString *htmlpath = nil;
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(120, 34, 150,  36)];
-    imageView.image = [UIImage imageNamed:@"iho_h_mg.png"];
+    imageView.image = [UIImage imageNamed:@"rsz_iho_h_mg.png"];
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
 
@@ -45,6 +45,8 @@
     
     
     self.ihoLogo.scalesPageToFit = YES;
+    self.ihoLogo.scrollView.scrollEnabled=NO;
+    self.ihoLogo.scrollView.bounces=NO;
     if(!ipad)
     htmlpath = [[NSBundle mainBundle] pathForResource:@"skull" ofType:@"html"];
     else

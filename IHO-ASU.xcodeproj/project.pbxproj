@@ -51,7 +51,6 @@
 		5F566B5918FC467B0042F4CA /* claszen_logo_maroon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B3918FC467B0042F4CA /* claszen_logo_maroon.png */; };
 		5F566B5B18FC467B0042F4CA /* f_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B3D18FC467B0042F4CA /* f_logo.png */; };
 		5F566B6018FC467B0042F4CA /* IHO_h_mg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B4218FC467B0042F4CA /* IHO_h_mg.png */; };
-		5F566B6118FC467B0042F4CA /* IHO_logo_active_areas.ai in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B4318FC467B0042F4CA /* IHO_logo_active_areas.ai */; };
 		5F566B6218FC467B0042F4CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B4418FC467B0042F4CA /* Images.xcassets */; };
 		5F566B6318FC467B0042F4CA /* invest.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B4518FC467B0042F4CA /* invest.png */; };
 		5F566B6818FC467B0042F4CA /* lucy_chin.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F566B4A18FC467B0042F4CA /* lucy_chin.png */; };
@@ -75,6 +74,9 @@
 		5FB10DF41910594F00081FB2 /* Lucy_FullSkeleton_uncolored.ai in Resources */ = {isa = PBXBuildFile; fileRef = 5FB10DF31910594F00081FB2 /* Lucy_FullSkeleton_uncolored.ai */; };
 		5FB10DF719105A3600081FB2 /* LucyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB10DF619105A3600081FB2 /* LucyViewController.m */; };
 		5FB10DF919105D0000081FB2 /* Lucy.html in Resources */ = {isa = PBXBuildFile; fileRef = 5FB10DF819105D0000081FB2 /* Lucy.html */; };
+		5FC93CC11910F01F0037ED99 /* jquery.mobile-1.3.2.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 5FC93CBF1910F01F0037ED99 /* jquery.mobile-1.3.2.min.css */; };
+		5FC93CC21910F01F0037ED99 /* jquery.mobile-1.3.2.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 5FC93CC01910F01F0037ED99 /* jquery.mobile-1.3.2.min.js */; };
+		5FC93CC41910F96A0037ED99 /* rsz_iho_h_mg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FC93CC31910F96A0037ED99 /* rsz_iho_h_mg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,7 +155,6 @@
 		5F566B3918FC467B0042F4CA /* claszen_logo_maroon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = claszen_logo_maroon.png; sourceTree = "<group>"; };
 		5F566B3D18FC467B0042F4CA /* f_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f_logo.png; sourceTree = "<group>"; };
 		5F566B4218FC467B0042F4CA /* IHO_h_mg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IHO_h_mg.png; sourceTree = "<group>"; };
-		5F566B4318FC467B0042F4CA /* IHO_logo_active_areas.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IHO_logo_active_areas.ai; sourceTree = "<group>"; };
 		5F566B4418FC467B0042F4CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5F566B4518FC467B0042F4CA /* invest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invest.png; sourceTree = "<group>"; };
 		5F566B4A18FC467B0042F4CA /* lucy_chin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucy_chin.png; sourceTree = "<group>"; };
@@ -183,6 +184,9 @@
 		5FB10DF519105A3600081FB2 /* LucyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LucyViewController.h; sourceTree = "<group>"; };
 		5FB10DF619105A3600081FB2 /* LucyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LucyViewController.m; sourceTree = "<group>"; };
 		5FB10DF819105D0000081FB2 /* Lucy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Lucy.html; sourceTree = "<group>"; };
+		5FC93CBF1910F01F0037ED99 /* jquery.mobile-1.3.2.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "jquery.mobile-1.3.2.min.css"; sourceTree = "<group>"; };
+		5FC93CC01910F01F0037ED99 /* jquery.mobile-1.3.2.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery.mobile-1.3.2.min.js"; sourceTree = "<group>"; };
+		5FC93CC31910F96A0037ED99 /* rsz_iho_h_mg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_iho_h_mg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +357,9 @@
 		5F566B3018FC46120042F4CA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5FC93CC31910F96A0037ED99 /* rsz_iho_h_mg.png */,
+				5FC93CBF1910F01F0037ED99 /* jquery.mobile-1.3.2.min.css */,
+				5FC93CC01910F01F0037ED99 /* jquery.mobile-1.3.2.min.js */,
 				5FB10DF31910594F00081FB2 /* Lucy_FullSkeleton_uncolored.ai */,
 				5FB10DF1191051F500081FB2 /* asuIHO.db */,
 				5F69C23D19103649009DC156 /* travel learn imge.jpg */,
@@ -363,7 +370,6 @@
 				5F566B3918FC467B0042F4CA /* claszen_logo_maroon.png */,
 				5F566B3D18FC467B0042F4CA /* f_logo.png */,
 				5F566B4218FC467B0042F4CA /* IHO_h_mg.png */,
-				5F566B4318FC467B0042F4CA /* IHO_logo_active_areas.ai */,
 				5F566B4418FC467B0042F4CA /* Images.xcassets */,
 				5F566B4518FC467B0042F4CA /* invest.png */,
 				5F566B4A18FC467B0042F4CA /* lucy_chin.png */,
@@ -463,12 +469,14 @@
 				5F566B6E18FC467B0042F4CA /* sediments.jpg in Resources */,
 				5F566B6318FC467B0042F4CA /* invest.png in Resources */,
 				5F566B7118FC467B0042F4CA /* youtube.png in Resources */,
+				5FC93CC41910F96A0037ED99 /* rsz_iho_h_mg.png in Resources */,
 				5F566B6818FC467B0042F4CA /* lucy_chin.png in Resources */,
 				5F566B6218FC467B0042F4CA /* Images.xcassets in Resources */,
 				5F566B6A18FC467B0042F4CA /* lucy.png in Resources */,
 				5F566B2E18FC45400042F4CA /* skull.html in Resources */,
 				5F566B1A18FC45400042F4CA /* Main_iPad.storyboard in Resources */,
 				5F566B6918FC467B0042F4CA /* lucy_skull.png in Resources */,
+				5FC93CC11910F01F0037ED99 /* jquery.mobile-1.3.2.min.css in Resources */,
 				5FB10DF919105D0000081FB2 /* Lucy.html in Resources */,
 				5F566B2118FC45400042F4CA /* InfoPlist.strings in Resources */,
 				5F9E8C1C18FDBE350008C7F1 /* search-icon-64.png in Resources */,
@@ -486,7 +494,6 @@
 				5F566ACA18FC43A60042F4CA /* Main_iPhone.storyboard in Resources */,
 				5FB10DF2191051F500081FB2 /* asuIHO.db in Resources */,
 				5F9E8C1918FDBE350008C7F1 /* About.html in Resources */,
-				5F566B6118FC467B0042F4CA /* IHO_logo_active_areas.ai in Resources */,
 				5F566B1D18FC45400042F4CA /* CreditDetails.html in Resources */,
 				5F4BF99C1904B7E200EF3BFF /* location.html in Resources */,
 				5F566AC118FC43A60042F4CA /* InfoPlist.strings in Resources */,
@@ -530,6 +537,7 @@
 				5F566B2818FC45400042F4CA /* LecturerDetail.m in Sources */,
 				5F566B1918FC45400042F4CA /* AboutViewController.m in Sources */,
 				5F92417C1907F6480097D1F4 /* BeingHumanViewController.m in Sources */,
+				5FC93CC21910F01F0037ED99 /* jquery.mobile-1.3.2.min.js in Sources */,
 				5F566B2318FC45400042F4CA /* GalleryOptionsViewController.m in Sources */,
 				5F566B1E18FC45400042F4CA /* CreditDetailsViewController.m in Sources */,
 				5F566AD018FC43A60042F4CA /* IHOViewController.m in Sources */,
