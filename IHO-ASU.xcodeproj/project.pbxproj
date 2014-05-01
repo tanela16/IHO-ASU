@@ -67,6 +67,7 @@
 		5F92417F1907F66D0097D1F4 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92417E1907F66D0097D1F4 /* SignUpViewController.m */; };
 		5F9241821907FD460097D1F4 /* EventDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9241811907FD460097D1F4 /* EventDetailsViewController.m */; };
 		5F92418519080F6F0097D1F4 /* EventsDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92418419080F6F0097D1F4 /* EventsDetail.m */; };
+		5F9BA5471912B2DE002F26A6 /* rsz_launch_iphone_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9BA5461912B2DE002F26A6 /* rsz_launch_iphone_retina.png */; };
 		5F9E8C1918FDBE350008C7F1 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E8C1518FDBE350008C7F1 /* About.html */; };
 		5F9E8C1A18FDBE350008C7F1 /* Donate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E8C1618FDBE350008C7F1 /* Donate.txt */; };
 		5F9E8C1C18FDBE350008C7F1 /* search-icon-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E8C1818FDBE350008C7F1 /* search-icon-64.png */; };
@@ -176,6 +177,7 @@
 		5F9241811907FD460097D1F4 /* EventDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailsViewController.m; sourceTree = "<group>"; };
 		5F92418319080F6F0097D1F4 /* EventsDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsDetail.h; sourceTree = "<group>"; };
 		5F92418419080F6F0097D1F4 /* EventsDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsDetail.m; sourceTree = "<group>"; };
+		5F9BA5461912B2DE002F26A6 /* rsz_launch_iphone_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_launch_iphone_retina.png; sourceTree = "<group>"; };
 		5F9E8C1518FDBE350008C7F1 /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
 		5F9E8C1618FDBE350008C7F1 /* Donate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Donate.txt; sourceTree = "<group>"; };
 		5F9E8C1818FDBE350008C7F1 /* search-icon-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-icon-64.png"; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 		5F566B3018FC46120042F4CA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5F9BA5461912B2DE002F26A6 /* rsz_launch_iphone_retina.png */,
 				5FC93CC31910F96A0037ED99 /* rsz_iho_h_mg.png */,
 				5FC93CBF1910F01F0037ED99 /* jquery.mobile-1.3.2.min.css */,
 				5FC93CC01910F01F0037ED99 /* jquery.mobile-1.3.2.min.js */,
@@ -478,6 +481,7 @@
 				5F566B6918FC467B0042F4CA /* lucy_skull.png in Resources */,
 				5FC93CC11910F01F0037ED99 /* jquery.mobile-1.3.2.min.css in Resources */,
 				5FB10DF919105D0000081FB2 /* Lucy.html in Resources */,
+				5F9BA5471912B2DE002F26A6 /* rsz_launch_iphone_retina.png in Resources */,
 				5F566B2118FC45400042F4CA /* InfoPlist.strings in Resources */,
 				5F9E8C1C18FDBE350008C7F1 /* search-icon-64.png in Resources */,
 				5F566B7018FC467B0042F4CA /* vimeo.png in Resources */,
