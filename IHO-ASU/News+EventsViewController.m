@@ -204,7 +204,7 @@
         [cell setBackgroundColor:[UIColor colorWithRed:0.22f green:0.42f blue:0.62f alpha:1.0 ]];
         [cell.textLabel setTextColor:[UIColor colorWithWhite:1.0 alpha:1.0]];
         [cell.textLabel setText:@"IHO TRAVEL AND LEARN"];
-        return cell;
+    
         return cell;
     }
     

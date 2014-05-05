@@ -1267,20 +1267,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Yk6-gC-iOS">
-                            <size key="itemSize" width="283" height="478"/>
+                            <size key="itemSize" width="161" height="141"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Um0-Pd-Ucx">
-                                <rect key="frame" x="19" y="64" width="283" height="478"/>
+                                <rect key="frame" x="80" y="64" width="161" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="283" height="478"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="161" height="141"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="pCJ-EK-Nnx" kind="push" identifier="imageSegue" id="oHl-qR-fq0"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -1295,6 +1298,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpc-cm-QJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1369" y="-1004"/>
+        </scene>
+        <!--Gallery Show Image View Controller-->
+        <scene sceneID="tqp-Hb-jjY">
+            <objects>
+                <viewController id="pCJ-EK-Nnx" customClass="GalleryShowImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="THx-Oe-0Jw"/>
+                        <viewControllerLayoutGuide type="bottom" id="br2-Yd-Etr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3iA-46-E3O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBD-fH-RaC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="588"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eQO-bZ-WDA"/>
+                    <connections>
+                        <outlet property="showImage" destination="IBD-fH-RaC" id="yrE-QY-NZL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWx-cb-Tc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="-1004"/>
         </scene>
         <!--Donate Site View Controller-->
         <scene sceneID="h4f-oH-uwx">

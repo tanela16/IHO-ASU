@@ -8,6 +8,7 @@
 
 #import "GalleryViewController.h"
 #import <sqlite3.h>
+#import "GalleryShowImageViewController.h"
 
 @interface GalleryViewController ()
 
@@ -99,14 +100,23 @@ static GalleryViewController *_database;
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
     //UIImageView *imageView = (UIImageView *)[cell viewWithTag:100];
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(5,100,300,300)];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(80,70,213,170)];
     //imageView.image = [images objectAtIndex:indexPath.row];
     imageView.image = [UIImage imageWithData:[images objectAtIndex:indexPath.row]];
     
-    //cell.i = [[UIImageView alloc] initWithImage:[UIImage imageWithData:[images objectAtIndex:indexPath.row]]];
-    
-    [cell addSubview:imageView];
     return cell;
+}
+
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"imageSegue"]) {
+        NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
+        GalleryShowImageViewController *destViewController = segue.destinationViewController;
+        NSIndexPath *indexPath = [indexPaths objectAtIndex:0];
+        destViewController.eachImage = [images[indexPath.section] objectAtIndex:indexPath.row];
+        [self.collectionView deselectItemAtIndexPath:indexPath animated:NO];
+    }
 }
 
 - (void)didReceiveMemoryWarning
